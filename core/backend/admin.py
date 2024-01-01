@@ -21,4 +21,4 @@ class TokenAdmin(admin.ModelAdmin):
 
 @register(PasswordResetToken)
 class PasswordResetTokenAdmin(admin.ModelAdmin):
-    list_display = ['token', 'user',]
+    list_display = ['token', 'user','validity']

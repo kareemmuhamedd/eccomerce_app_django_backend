@@ -37,6 +37,6 @@ class PasswordResetToken(models.Model):
     token = models.CharField(max_length=5000)
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='password_reset_tokens_set')
-
+    validity=timezone.now() + timezone.timedelta(days=1)
     def __str__(self):
         return self.user.email

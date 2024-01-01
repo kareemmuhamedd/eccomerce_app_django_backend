@@ -9,5 +9,5 @@ urlpatterns = [
     path('create_account/', create_account),
     path('login/', login),
     path('password_reset_email/', password_reset_email),
-    path('password_reset_from/<email>/<token>/', password_reset_from,name='password_reset_from'),
+    path('password_reset_from/<email>/<token>/', password_reset_from,name='password_reset_form'),
 ]

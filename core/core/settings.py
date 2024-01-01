@@ -130,12 +130,27 @@ TEMPLATES_BASE_URL = 'http://127.0.0.1:8000'
 
 
 
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMALI_HOST = 'smtp-relay.brevo.com'
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+# EMALI_HOST_USER = 'kareemmuhamed2g@gmail.com'
+# EMALI_HOST_PASSWORD = 'v7sfCM1JjW8Q4n6D'
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!SENDING EMAIL!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# settings for sending emails
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMALI_HOST = 'smtp-relay.brevo.com'
-EMAIL_USE_TLS = True
+# EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'kareemmuhamed.eg@gmail.com' # or any email you create app like this
+EMAIL_HOST_PASSWORD = 'fkznakshsslsfgyo' # this is my password i was coped 
 EMAIL_PORT = 587
-EMALI_HOST_USER = 'kareemmuhamed2g@gmail.com'
-EMALI_HOST_PASSWORD = 'v7sfCM1JjW8Q4n6D'
+EMAIL_USE_TLS = True
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
 
 # EMAIL_BACKEND = 'django.core.mail.backends.stmp.EmailBackend'
 # EMALI_HOST = 'smtp.gmail.com'
